@@ -34,15 +34,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:    
     - name: Checkout this repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Cache dependencies
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ~/.m2/repository
         key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
         restore-keys: |
           ${{ runner.os }}-maven-
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4
       with:
         name: artifacts
     - name: Deploy to Sandbox
