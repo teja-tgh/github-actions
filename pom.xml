@@ -4,7 +4,7 @@
 
 	<groupId>5271791a-c55f-40dd-b1c2-d21759445ad5</groupId>
 	<artifactId>github-actions</artifactId>
-	<version>1.0.5</version>
+	<version>1.0.6</version>
 	<packaging>mule-application</packaging>
 
 	<name>github-actions</name>
@@ -36,7 +36,7 @@
 						<provider>MC</provider>
 						<environment>Sandbox</environment>
 						<target>Cloudhub-US-East-2</target>
-						<muleVersion>4.6.9</muleVersion>
+						<muleVersion>4.9.7</muleVersion>
 						<connectedAppClientId>${client.id}</connectedAppClientId>
 						<connectedAppClientSecret>${client.secret}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
